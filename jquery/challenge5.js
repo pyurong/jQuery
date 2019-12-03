@@ -4,17 +4,17 @@ $(".preview").each(function(){
         $("#image").html($(this).attr("alt"));
     })
 
-    $("#img").focusin(function(){
+    $(this).focus(function(){
         $("#image").css("background-image", "url("+ $(this).attr("src") + ")");
         $("#image").html($(this).attr("alt"));
     })
 
-    $("#img").mouseleave(function(){
+    $(this).mouseleave(function(){
         $("#image").css("background-image", "none");
         $("#image").html("Hover over an image below.");
     })
 
-    $("#img").blur(function(){
+    $(this).blur(function(){
         $("#image").css("background-image", "none");
         $("#image").html("Hover over an image below.");
     })
